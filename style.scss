@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('img/dpokedex.jpg');
+    background-position: center;
+}
+
+.pokedex-options {
+    opacity: 0;
+}
+
+
+.bar_container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.sort_div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    span {
+        margin: 0 25px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    span:hover {
+        background-color: rgb(255, 174, 0) !important;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: 'Pokemon Solid', sans-serif;
+    -webkit-text-stroke: 5px black;
+}
+
+#searchbar {
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    background-color: white ;
+
+}
+
+#searchbar:focus {
+    background-color: rgba( yellow, 0.6);
+    border: none;
+}
+
+#searchbar::placeholder {
+    text-align: center;
+    color: black;
+}
+
+.pokedex_alert {
+    display: flex;
+    justify-content: center;
+    span {
+        opacity: 0;
+        margin: 0 25px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 50px;
+        transition: 1s;
+    }
+    span:hover {
+        background-color:rgba( yellow, 0.6) ;
+        transition: 0.3s;
+    }
+}
+
+#pokemons {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+
+    
+
+    .pokemonContainer {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 10px;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 25px;
+        
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .attributes {
+            display: flex;
+
+            p {
+                margin: 0 5px;
+            }
+        }
+
+        .type {
+            display: flex;
+            align-items: center;
+            img {
+                width: 75px;
+                height: 15px;
+            }
+        }
+    }
+}
