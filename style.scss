@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@400;500;700&display=swap');
-
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ h1 {
     text-align: center;
     color: white;
     font-size: 100px;
-    font-family: 'Pokemon Solid', sans-serif;
+    font-family: 'Pokemon Solid', sans-serif !important;
     -webkit-text-stroke: 5px black;
 }
 
